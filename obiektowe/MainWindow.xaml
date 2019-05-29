@@ -1,0 +1,23 @@
+﻿<Window x:Class="obiektowe.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        >
+    <Grid>
+        <Button x:Name="btn_zaloguj" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="206" Height="46" Click="Autoryzuj"
+                BorderThickness="0" Padding="0" Background="Transparent">
+            <Image Source="Assets/btn_google_sign-in.png" Stretch="UniformToFill"/>
+        </Button>
+        <TextBlock x:Name="text_welcom" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Witaj" VerticalAlignment="Top" Width="75" Margin="0,10,0,0"/>
+        <Button x:Name="btn_zamowienie" Content="Zamów" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="Btn_zamowienie_Click"/>
+
+        <Button x:Name="btn_admin" Content="Admin" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="75" Click="Btn_admin_Click"/>
+        <ListBox x:Name="koszyk" HorizontalAlignment="Left" Height="253" Margin="334,10,0,0" VerticalAlignment="Top" Width="173" MouseDoubleClick="Koszyk_MouseDoubleClick"/>
+        <ListBox x:Name="produkty" HorizontalAlignment="Left" Height="274" Margin="10,10,0,0" VerticalAlignment="Top" Width="173" MouseDoubleClick="Produkty_MouseDoubleClick"/>
+        <TextBlock x:Name="kwota" HorizontalAlignment="Left" Margin="334,268,0,0" TextWrapping="Wrap" Text="Łączna kwota: 0,00" VerticalAlignment="Top" Width="173"/>
+    </Grid>
+
+</Window>
